@@ -1,0 +1,100 @@
+:root {
+    --background: rgb(48, 142, 214);
+    --background-page: #F3EBF6;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'); */
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: var(--background-page);
+}
+.pagescreen {
+    font-family: 'Ubuntu';
+    display: flex;
+    background-color: white;
+    width: 80vh;
+    height: 50vh;
+    margin: 15em auto;
+    border-radius: 30px;
+    box-shadow: 0px 11px 35px 2px rgba(70, 93, 156, 0.246);
+}
+.left {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left img {
+    max-width: 250px;
+    height: auto;
+}
+.right {
+    width: 400px;
+    background-color: var(--background);
+    border-radius: 0 30px 30px 0;
+    padding: 50px;
+} 
+.right .text {
+    text-align: center;
+    color: white;
+}
+.right label {
+    display: block;
+    margin-bottom: 20px;
+}
+.right h1 {
+    color: white;
+    text-align: center;
+}
+.right input {
+    text-align: center;
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    outline: 0;
+    border-radius: 30px;
+}
+
+.button{
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+    color: #fff;
+    font: bold; 
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -moz-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+.button:hover {
+    background-position: 100% 0;
+    -moz-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+.button:focus {
+    outline: none;
+}
+.error {
+    font-size: 11px;
+    color: white;
+    background-color: red;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
